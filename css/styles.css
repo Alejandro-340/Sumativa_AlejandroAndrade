@@ -1,0 +1,311 @@
+/* Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* Selector tipo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0F8F8;
+    color: #0D2E34;
+    line-height: 1.5;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #17454F;
+}
+
+img {
+    min-width: 100%;
+}
+
+a {
+    color: #1E6575;
+    text-decoration: none;
+}
+
+button, input, select, textarea {
+    container: inherit;
+}
+
+/* Selectores de clase */
+.site-header {
+    background-color: #17454F;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(135deg, #17454F, #3A9BAD);
+    color: #FFFFFF;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #17454f;
+    color: #FFFFFF;
+    padding: 0.8rem 1.5rem;
+    border-radius: none;
+    cursor: pointer; 
+}
+
+.section {
+    max-width:900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.fondo-claro {
+    background-color: #E0F2F4;
+    max-width: 100%;
+    padding: 3rem calc(100% - 900px) / 2 + 2rem;
+}
+
+.subtitulo {
+    color: #888888;
+    margin-bottom: 2rem;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.info-card {
+    flex: 1 1 200px;
+    background-color: #FFFFFF;
+    padding: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(23, 69, 79, 0.1);
+    border-left: 4px solid #3A9BAD;
+}
+
+/* Selectores descendientes */
+.site-header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.site-header nav a {
+    color: #A8D8DF;
+    margin-bottom: 1.5rem;
+    min-block-size: 0.9rem;
+}
+
+.header-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.info-card h3 {
+    margin-bottom: 0.5rem;
+    color: #17454F;
+}
+
+.info-card p {
+    color: #555555;
+    margin: 0;
+}
+
+/* galeria de paquetes disponibles */
+.galeria {
+    display: flex;
+    flex: wrap;
+    gap: 1.5rem;
+}
+
+.alimentos-card {
+    flex: 1 1 280px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(23, 69, 79, 0.1)
+}
+
+.alimento-img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.alimentos-info {
+    padding: 1rem;
+}
+
+.alimento-info h3 {
+    color: #17454F;
+    margin-bottom: 0.3rem;
+}
+
+.alimento-info p {
+    color: #555555;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #D4EEF1;
+    color: #17454F;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* =================================
+   PASOS PARA RESCATAR
+   ================================= */
+/* Lista de pasos */
+.pasos-lista {
+    display:flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Pasos individuales */
+.paso {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(23, 69, 79, 0.1);
+}
+
+/* Numero circular del paso */
+.paso-numero {
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #17454F, #3A9BAD);
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Título del paso */
+.paso-detalle h3 {
+    margin-bottom: 0.3rem;
+    color: #17454F;
+}
+
+.paso-detalle p {
+    color: #555555;
+    margin: 0;
+}
+
+/* =================================
+   FORMULARIO DE CONTACTO
+   ================================= */
+/* Contenedor del formulario */
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* Inputs y select del formulario */
+.formulario input,
+.formulario select {
+    flex: 1 1 200;
+    padding: 0.8rem;
+    border: 1px solid #8ECDD6;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
+
+/* Formulario textarea (Área de texto) */
+.formulario textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #8ECDD6;
+    border-radius: 6px;
+    resize: vertical;
+}
+
+/* Botón del formulario (btn = botón) */
+.formulario.btn {
+    width: 100%;
+    background: linear-gradient(135deg, #17454F, #3A9BAD);
+    border: none;
+}
+
+/* =================================
+   FOOTER
+   ================================= */
+/* Contenedor principal del footer */
+.site-footer {
+    background-color: #0D2E34;
+    color: #FFFFFF;
+    padding: 2rem;
+    margin-top: 0;
+}
+
+/* Contenido del footer */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Columnas del footer */
+.footer-col {
+    flex: 1 1 200px;
+}
+
+/* Títulos del footer */
+.footer-col h4 {
+    margin-bottom: 0.8rem;
+    color: #A8D8DF;
+}
+
+/* Texto del footer */
+.footer-col p {
+    color: #7AABB3;
+    margin-bottom: 0.3rem;
+    font-size:0.9rem;
+}
+
+/* COPYRIGHT */
+.copyright {
+    text-align: center;
+    color: #4A7A82;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #17454F;
+    font-size: 0.85rem;
+}
